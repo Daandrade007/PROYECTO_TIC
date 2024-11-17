@@ -1,0 +1,172 @@
+
+  
+  .search-container {
+    display: flex;
+    align-items: center;  /* Alinea verticalmente el contenedor de búsqueda */
+    width: 50%;
+    max-width: 400px;
+  
+    margin-left: 40px; /* Elimina el margen izquierdo */
+    margin-right: auto;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px 10px 10px 40px; /* Añade espacio para el icono de la lupa */
+    border-radius: 19px;
+    border: 0.6px solid #D5D5D5;
+    background: #F5F6FA;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .search-input:focus {
+    border-color: #FF9100; /* Cambia el color en el foco */
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el ratón */
+  }
+  
+  /* Estilo del contenedor de usuario */
+  .user-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el icono y el nombre */
+    position: fixed;  /* Fija el elemento en la pantalla */
+    top: 15px;        /* Margen superior */
+    right: 20px;      /* Margen derecho */
+    cursor: pointer;  /* Cambia el cursor al pasar por encima */
+    z-index: 1000;    /* Asegúrate de que esté sobre otros elementos */
+  }
+  
+  /* Icono circular del usuario con iniciales */
+  .user-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background: #FF9100;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-right: 20px; /* Espacio entre el icono y el nombre */
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  /* Nombre del usuario */
+  .user-name {
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: rgb(0, 0, 0); /* Color del texto */
+    transition: color 0.3s, transform 0.3s; /* Transiciones suaves para color y tamaño */
+  }
+  
+  /* Efecto hover para el nombre del usuario */
+  .user-name:hover {
+    color: #fe9a03; /* Cambia a verde al pasar el mouse */
+    transform: scale(1.2); /* Escala el texto al pasar el mouse */
+  }
+  
+  .search-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 20px;
+    color: #888;
+    font-size: 18px; /* Ajusta el tamaño del icono */
+  }
+  /* Estilo del botón del menú */
+  .menu-button {
+    background-color: #FF9100;
+    border: none;
+    border-radius: 40%; /* Hace el botón circular */
+    padding: 1px; /* Tamaño del botón circular */
+    margin-left: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+   
+    
+    color: black; /* Color de la flecha */
+  }
+  
+  .menu-button:hover {
+    background-color: #fe9a03; /* Cambia el color al pasar el mouse */
+  }
+  
+  .menu-icon {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  /* Estilo del menú desplegable */
+  .dropdown-menu {
+    position: absolute;
+    top: 120%; /* Aparece justo debajo del botón */
+    right: 0;
+    background-color: #cf2929ea;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 160px; /* Ajustar el ancho del menú */
+    z-index: 1000;
+  }
+  
+  .dropdown-menu button {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    padding: 8px 16px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center; /* Alinea el texto y los iconos */
+    border-radius: 14px;
+    
+    
+  }
+  
+  .dropdown-menu button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilo para los iconos del menú */
+  .menu-icon {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    font-size: 18px; /* Tamaño del icono */
+  }
+  .user-info {
+  display: flex; /* Alinea los elementos en fila */
+  align-items: center; /* Centra verticalmente */
+  position: relative; /* Necesario para posicionar el dropdown-menu */
+  background-color: #ffffff; /* Fondo blanco limpio */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sutil sombra para destacar */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  transition: all 0.3s ease; /* Transición para el hover */
+}

@@ -1,0 +1,35 @@
+/* Contenedor principal que usa Flexbox */
+.home-container {
+    display: flex;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+  }
+  
+  /* Contenedor principal con el header y contenido */
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cabecera (Header) */
+  .header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end; /* Alinea el header a la derecha */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contenedor de contenido */
+  .content-container {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto; /* Permite scroll si el contenido es muy largo */
+  }
+  
+  /* Título del contenido */
+  .content-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  

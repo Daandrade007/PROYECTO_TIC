@@ -1,0 +1,77 @@
+/* Estilos principales del sidebar */
+.sidebar {
+    width: 259px;
+    background-color: #ffffff; /* Color de fondo del sidebar */
+    color: rgb(255, 118, 118);
+    height: 100vh; /* Altura completa */
+    border-right: 2px solid #a4a4a47b; /* Línea visible en el lado derecho */
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+  }
+  
+  /* Estilos de los enlaces */
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s; /* Animación de transición */
+    position: relative; /* Necesario para el pseudo-elemento */
+  }
+  
+  /* Efecto de borde izquierdo en hover */
+  .sidebar a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    border-radius: 4px 0 0 4px;
+    margin-right: 100px; /* Espacio entre el pseudo-elemento y el ícono */
+  }
+  
+  
+  .sidebar a:hover::before {
+    background-color: #FF9100; /* Color del indicador de selección */
+  }
+  
+  /* Efecto hover para cambiar color de fondo y texto */
+  .sidebar a:hover {
+    background-color:  #7ee5f7; /* Color de fondo al pasar el mouse */
+    color: #000000; /* Color de texto al pasar el mouse */
+  }
+  
+  /* Icono y texto del enlace */
+  .sidebar a span {
+    margin-left: 12px; /* Ajusta el espacio entre el icono y el texto */
+  }
+  
+  /* Clase para centrar el logo */
+  .logo {
+    width: 200px; /* Ajusta el tamaño según necesites */
+   padding: 20px;
+   padding-left: 20px;
+   
+  }
+  /* Efecto de borde izquierdo en hover */
+  
